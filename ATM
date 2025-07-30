@@ -1,0 +1,180 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+
+    float balance;
+    int pin;
+    int aniket = 1234;
+    int ashish = 2345;
+    int preeti = 3456;
+    int uma = 4567;
+    int eva = 5678;
+    int gaura = 6789;
+    float withdrawal;
+    float check_balance;
+    float deposite;
+    string transactiontype, deposite_money, money_withdrawal, check_account_balance;
+    string one = "one - money_withdrawal";
+    string two = "two - check_account_balance";
+    string three = "three - deposite_money";
+
+    cout<<"Welcome to ATM \n";
+    cout<<"\n";
+    cout<<"Please enter your balance: \n";
+    cin>>balance;
+    cout<<"Please enter your 4 digit PIN:         ";
+    cin>>pin;
+    cout<<"\n";
+    
+
+    if (pin == aniket){
+        cout<<"Welcome aniket, \n"<<"Select type of transaction: \n"<<"one - money_withdrawal \n"<<"two - check_account_balance \n"<<"three - deposite_money \n";
+        cin>>transactiontype;
+        
+        if (transactiontype == "one"){
+            cout<<"Enter withdrawal amount:  \n";
+            cin>>withdrawal;
+            cout<<"\n";
+            if (withdrawal >= balance){
+                cout<<"Aniket you have insufficient balance ";
+            }
+            else {
+                cout<<"Aniket Transaction successful \n"<<"Remaining balance is "<<balance-withdrawal<<"$";
+            }
+        }
+        else if (transactiontype == "three"){
+            cout<<"Enter amount to deposite ";
+            cin>>deposite;
+            cout<<"\n";
+            cout<<"Aniket Your current balance is "<< deposite + balance;       
+        }
+        else {
+            cout<<"Aniket Your current balance is "<<balance<<"$";
+
+        }
+    
+    }
+    else if (pin == ashish){
+        cout<<"Welcome Ashish, \n"<<"Select type of transaction: \n"<<"one - money_withdrawal \n"<<"two - check_account_balance \n"<<"three - deposite_money \n";
+        cin>>transactiontype;
+
+        if (transactiontype == "one"){
+            cout<<"Enter withdrawal amount:  \n";
+            cin>>withdrawal;
+            if (withdrawal >= balance){
+                cout<<"Ashish insufficient balance ";
+            }
+            else {
+                cout<<"Ashish Transaction successful \n"<<"Ashish Remaining balance is "<<balance-withdrawal<<"$";
+            }
+        }
+        else if (transactiontype == "three"){
+            cout<<"Enter amount to deposite ";
+            cin>>deposite;
+            cout<<"Ashish Your current balance is "<< deposite + balance;       
+        }
+        else {
+            cout<<"Ashish Your current balance is "<<balance<<"$";
+
+        }
+    }
+    else if (pin == preeti){
+        cout<<"Welcome Preeti, \n"<<"Select type of transaction: \n"<<"one - money_withdrawal \n"<<"two - check_account_balance \n"<<"three - deposite_money \n";
+        cin>>transactiontype;
+
+        if (transactiontype == "one"){
+            cout<<"Enter withdrawal amount:  \n";
+            cin>>withdrawal;
+            if (withdrawal >= balance){
+                cout<<"Preeti insufficient balance ";
+            }
+            else {
+                cout<<"Preeti Transaction successful \n"<<"Preeti your Remaining balance is "<<balance-withdrawal<<"$";
+            }
+        }
+        else if (transactiontype == "three"){
+            cout<<"Enter amount to deposite ";
+            cin>>deposite;
+            cout<<"Preeti Your current balance is "<< deposite + balance;       
+        }
+        else {
+            cout<<"Preeti Your current balance is "<<balance<<"$";
+
+        }
+    }
+    else if (pin == uma){
+        cout<<"Welcome Uma, \n"<<"Select type of transaction: \n"<<"one - money_withdrawal \n"<<"two - check_account_balance \n"<<"three - deposite_money \n";
+        cin>>transactiontype;
+
+        if (transactiontype == "one"){
+            cout<<"Enter withdrawal amount:  \n";
+            cin>>withdrawal;
+            if (withdrawal >= balance){
+                cout<<"Uma insufficient balance ";
+            }
+            else {
+                cout<<"Uma your Transaction is successful \n"<<"Uma your Remaining balance is "<<balance-withdrawal<<"$";
+            }
+        }
+        else if (transactiontype == "three"){
+            cout<<"Enter amount to deposite ";
+            cin>>deposite;
+            cout<<"Uma Your current balance is "<< deposite + balance;       
+        }
+        else {
+            cout<<"Uma Your current balance is "<<balance<<"$";
+
+        }
+    }
+    else if (pin == eva){
+        cout<<"Welcome Eva, \n"<<"Select type of transaction: \n"<<"one - money_withdrawal \n"<<"two - check_account_balance \n"<<"three - deposite_money \n";
+        cin>>transactiontype;
+
+        if (transactiontype == "one"){
+            cout<<"Enter withdrawal amount:  \n";
+            cin>>withdrawal;
+            if (withdrawal >= balance){
+                cout<<"Eva you have insufficient balance ";
+            }
+            else {
+                cout<<"Eva your Transaction is successful \n"<<"Eva your Remaining balance is "<<balance-withdrawal<<"$";
+            }
+        }
+        else if (transactiontype == "three"){
+            cout<<"Enter amount to deposite ";
+            cin>>deposite;
+            cout<<"Eva Your current balance is "<< deposite + balance;       
+        }
+        else {
+            cout<<"Eva Your current balance is "<<balance<<"$";
+
+        }
+    }
+    else {
+        cout<<"Welcome gaura, \n"<<"Select type of transaction: \n"<<"one - money_withdrawal \n"<<"two - check_account_balance \n"<<"three - deposite_money \n";
+        cin>>transactiontype;
+
+        if (transactiontype == "one"){
+            cout<<"Enter withdrawal amount:  \n";
+            cin>>withdrawal;
+            if (withdrawal >= balance){
+                cout<<"Gaura you have insufficient balance ";
+            }
+            else {
+                cout<<"Gaura your Transaction is successful \n"<<"Gaura your Remaining balance is "<<balance-withdrawal<<"$";
+            }
+        }
+        else if (transactiontype == "three"){
+            cout<<"Enter amount to deposite ";
+            cin>>deposite;
+            cout<<"Gaura Your current balance is "<< deposite + balance;       
+        }
+        else {
+            cout<<"Gaura Your current balance is "<<balance<<"$";
+
+        }
+    }
+
+}
