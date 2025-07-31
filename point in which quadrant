@@ -20,6 +20,12 @@ int main(){
     else if ( x>0 && y<0 ){
         cout<<"Your point ("<<x<<","<<y<<") lies in fourth quadrant";
     }
+    else if ( x == 0 && y != 0  ){
+        cout<<"Your point is on Y axis";
+    }
+    else if ( y == 0 && x != 0 ){
+        cout<<"Your point is on X axis";
+    }
     else {
         cout<<"your point is on origin";
     }
