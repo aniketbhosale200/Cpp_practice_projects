@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+ 
+int main(){
+
+    int a;
+    cout<<"Enter any number to find table of: ";
+    cin>>a;
+
+    for(int i= a; i <= a*10 ; i = i + a)
+    
+    cout<<i<<"\n";
+}
