@@ -1,0 +1,24 @@
+//asking user for custom range to get sum of total numbers in range
+#include <iostream>
+using namespace std;
+ 
+int main(){
+  int sum = 0;
+  int a;
+  int b;
+  cout<<"enter the numbers range to get sum of numbers  \n";
+  cout<<"enter the starting number:  ";
+  cin>>a;
+  cout<<"enter the ending number:  ";
+  cin>>b;
+
+  for(int i=a; i<=b; i++){
+    sum = i + sum;
+  }  
+    cout<<"sum of number from "<<a<<" to "<<b<<" : "<<sum<<"\n";
+  }
+
+// here we asked user to give us starting number and ending number
+// starting number is "a" and ending number is "b", so we get range for which we can calculate the sum of the range
+// and we have given intial variable is starting number ( int i = a)
+// and end conditiion to be b, i.e check upto b ( i<= b)
